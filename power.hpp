@@ -2,7 +2,8 @@
 #define __POWER_HPP__
 
 #include "base.hpp"
-#include "operator.hpp"
+#include "mult.hpp"
+#include "div.hpp"
 #include <math.h>
 
 
