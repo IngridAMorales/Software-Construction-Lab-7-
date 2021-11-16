@@ -9,9 +9,6 @@ class Base {
         Base() { }
 
         virtual ~Base() {}
-    	Base* parse(char** input, int length){
-	  
-}
         /* Pure Virtual Functions */
         virtual double evaluate() = 0;
         virtual std::string stringify() = 0;

@@ -1,0 +1,8 @@
+.main.cpp.swo
+CMakeCache.txt
+CMakeFiles/
+Makefile
+a.out
+cmake_install.cmake
+lib/
+parse.hpp
