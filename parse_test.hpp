@@ -6,11 +6,13 @@
 
 TEST(PrintTest, ParseFunc){
    Parse* test; 
-   char input = '4';
+   char input = '3';
+   char inputt = '+';
+   char inputtt = '2';
    char *input1 =&input;	
    char** input2 = &input1;
-   Base* test1 = test->parse(input2,1);
-EXPECT_EQ(test1->stringify(),"4");
+   Base* test1 = test->parse(input2,3);
+EXPECT_EQ(test1->stringify(),"3 + 2");
 
 }
 
