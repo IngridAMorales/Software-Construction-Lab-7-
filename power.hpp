@@ -22,7 +22,7 @@ class Pow : public Base{
 	 return pow(this->left->evaluate(),this->right->evaluate());
 }
 	virtual std::string stringify(){
-		return "("+ this->left->stringify() + " ** " + this->right->stringify()+")"; 
+		return "("+ this->left->stringify() + "**" + this->right->stringify()+")"; 
 }
 
 };

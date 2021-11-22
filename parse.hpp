@@ -8,6 +8,7 @@
 #include "sub.hpp"
 #include "mult.hpp"
 #include "power.hpp"
+#include "div.hpp"
 class Parse {
  
 public:

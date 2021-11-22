@@ -1,7 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "parse.hpp"
-
+#include "parse_test.hpp"
 
 int main(int argc, char **argv) { 
   ::testing::InitGoogleTest(&argc, argv);
