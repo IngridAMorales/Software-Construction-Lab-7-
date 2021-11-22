@@ -1,9 +1,10 @@
 CMakeCache.txt
 CMakeFiles/
+MakeFiles/
 Makefile
+a.out
 calculator
 cmake_install.cmake
 lib/
 test
-
 
