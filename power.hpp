@@ -2,7 +2,8 @@
 #define __POWER_HPP__
 
 #include "base.hpp"
-#include "operator.hpp"
+#include "mult.hpp"
+#include "div.hpp" 
 #include <math.h>
 
 
@@ -21,7 +22,7 @@ class Pow : public Base{
 	 return pow(this->left->evaluate(),this->right->evaluate());
 }
 	virtual std::string stringify(){
-		return "("+ this->left->stringify() + " ** " + this->right->stringify()+")"; 
+		return "("+ this->left->stringify() + "**" + this->right->stringify()+")"; 
 }
 
 };

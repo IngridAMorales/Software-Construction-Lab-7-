@@ -18,7 +18,7 @@ class Div : public Base {
 		 return this->left->evaluate() / this->right->evaluate(); 
 }
 	   virtual std::string stringify() {
-		return "("+ this->left->stringify()+ " / "+ this->right->stringify()+ ")"; 
+		return "("+ this->left->stringify()+ "/"+ this->right->stringify()+ ")"; 
 	}
 };
 

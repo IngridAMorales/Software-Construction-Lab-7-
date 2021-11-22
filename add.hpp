@@ -2,7 +2,8 @@
 #define __ADD_HPP__
 
 #include "base.hpp" 
-#include "operator.hpp"
+#include "mult.hpp"
+#include "div.hpp"
 
 class ThreeOpMock: public Base {
      public: 
