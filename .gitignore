@@ -1,0 +1,9 @@
+MakeFiles/
+Makefile
+a.out
+calculator
+cmake_install.cmake
+lib/
+test
+CMakeCache.txt
+CMakeFiles/
