@@ -8,8 +8,7 @@ int main(int argc, char** argv) {
     // does not constitute a completed lab. Make sure you write unit tests for
     // all the classes that you create (and can be instantiated) in this lab
     Parse* test;
-     std::cout << argc;
-     Base* test1 = test->parse(argv+1,argc);
-    std::cout << test1->stringify() << std::endl;
+     Base* test1 = test->parse(argv+1,argc-1);
+    std::cout << test1->stringify() << test->evaluate() <<std::endl;
     return 0;
 }

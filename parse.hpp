@@ -8,49 +8,29 @@
 
 
 class Parse {
-
-private:
-
-Base* output;
-  public:
-
+public:
+   
    Base* parse(char** input, int length){
-if (length%2 ==0){
-	return nullptr;
-}
-try{
-   output = new Op(std::stod(input[0]));
-}
-catch(std::exception e){
-  return nullptr;
-}
-int i =1;
-if (std::string(input[i]) == "+"){
-   Base* second= new Op(std::stod(input[i+1]));
-   Base* add = new Add(output,second);
-   return add;
-}
-/*
- *   else if (input.at(i)=="+"){
- *   	return;
- *   	     }
- *   	     else if (input.at(i)=="-"){
- *   	     	return;
- *   	     	}
- *   	     	else if (input.at(i)=="\*"){
- *   	     		return;
- *   	     		}
- *   	     		else if (input.at(i)=="/"){
- *   	     			return;	
- *   	     			}
- *   	     			else if (input.at(i)=="\*\*"){
- *   	     				return;
- *   	     				}
- *   	     				else{
- *   	     				return;
- *   	     				}
- *   	     				*/
-}
+	
+	if ( length % 2 ==0){
+	  return nullptr;
+	}
+	else {
+	try{
+   	Base*  output = new Op(std::stod(input[0]));
+	}
+	catch(std::exception e){
+  	  return nullptr;
+	}
+	}
+	if (length > 2 && std::string(input[1]) == "+"){
+	  Base* output = new Op(std::stod(input[0]));
+   	  Base* second= new Op(std::stod(input[2]));
+   	  Base* add = new Add(output,second);
+   	  return add;
+	}
+	
+   }
 };
 
 #endif
